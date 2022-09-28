@@ -1,10 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home - Cine Filmes 
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
+
+<ion-item-divider color="dark" >
+  <ion-label  >  Cine Filmes </ion-label>
+</ion-item-divider>
+
+
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -13,8 +21,105 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  
+    
+  
+  <ion-grid style="max-width: 1200px; width:95%; margin: auto;">
+
+
+    <h1 align="center">
+      <ion-label>
+      Cine Filmes 
+    </ion-label> </h1> 
+
+    
+
+    <ion-row style="background-color: rgb(255, 255, 255)">
+
+      <ion-item-divider color="light" >
+        <ion-label  >  Lançamento da Semana </ion-label>
+      </ion-item-divider>
+
+
+      
+       <ion-col  (click)="detalhes (0)" size="12">
+         <a [routerLink] = "['/detalhes/0']">
+        <ion-img src="http://filfelix.com.br/wp-content/uploads/2011/10/capa-filme-tubar-25C3-25A3o.jpg">Tubarão</ion-img></a>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+       </ion-col>
+
+
+
+
+       <ion-item-divider color="success" >
+        <ion-label  >  Sessão  Familia  </ion-label>
+      </ion-item-divider>
+
+
+
+
+    </ion-row>
+    <hr>
+    <ion-row style="background-color: rgb(223, 200, 200)" >
+       <ion-col (click)="detalhes (1)"size="12" size-md="6">
+        <a [routerLink]="['/detalhes/1']">
+        <ion-img src="https://br.web.img2.acsta.net/pictures/17/05/09/14/54/329776.jpg">Madrugada dos Mortos</ion-img></a>
+       </ion-col>
+       
+      <ion-col (click)="detalhes (2)"size="12"  size-md="6" >
+        <a [routerLink]="['/detalhes/2']">
+        <ion-img src="https://i.pinimg.com/originals/b0/f5/fa/b0f5fa710c22e131aa2d7ff4aa325aa7.jpg">Ataque dos Santos</ion-img></a>
+      </ion-col>
+       
+      <ion-col (click)="detalhes (3)"size="12" size-md="6">
+        <a [routerLink]="['/detalhes/3']">
+        <ion-img src="https://i.pinimg.com/550x/d4/73/c2/d473c2a433eb3e318b81b860420129ad.jpg">Coda</ion-img></a>
+      </ion-col> 
+
+      <ion-col (click)="detalhes (4)" size="12" size-md="6">
+          <a [routerLink]="['/detalhes/3']">
+            <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_v25AAT2lpy40vIn9Bsjg__57ou-rgY3yFg&usqp=CAU">Mate ou Morra</ion-img>
+          </a>
+      </ion-col>
+        
+           
+    </ion-row>
+
+    <br><br><br><br><br>
+
+    <ion-item-divider color="danger" >
+      <ion-label  >  Terror  </ion-label>
+    </ion-item-divider>
+
+
+    <ion-row style="background-color: black" >
+      <ion-col (click)="detalhes (1)"size="12" size-md="6">
+       <a [routerLink]="['/detalhes/1']">
+       <ion-img src="https://d3alv7ekdacjys.cloudfront.net/Custom/Content/Products/10/98/1098399_a-entidade-ii-dvd-filme-terror-ms_m1_637383540862573125.jpg">Madrugada dos Mortos</ion-img></a>
+      </ion-col>
+      
+     <ion-col (click)="detalhes (2)"size="12"  size-md="6" >
+       <a [routerLink]="['/detalhes/2']">
+       <ion-img src="https://i.pinimg.com/236x/cc/3d/b4/cc3db43f858e9a0be7a0958beb77669d--movies-horror-best-horror-dvd.jpg">Ataque dos Santos</ion-img></a>
+     </ion-col>
+      
+     <ion-col (click)="detalhes (3)"size="12" size-md="6">
+       <a [routerLink]="['/detalhes/3']">
+       <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvc5p3Gr51j1Ey6qR3cXad2OWW3E81lcTjgQ&usqp=CAU">O rastro </ion-img></a>
+     </ion-col> 
+
+     <ion-col (click)="detalhes (4)" size="12" size-md="6">
+         <a [routerLink]="['/detalhes/3']">
+           <ion-img src="http://filfelix.com.br/wp-content/uploads/2011/10/capa-filme-tubar-25C3-25A3o.jpg">Tubarão</ion-img>
+         </a>
+     </ion-col>
+       
+          
+   </ion-row>
+
+
+
+  
+  </ion-grid>
+
 </ion-content>
